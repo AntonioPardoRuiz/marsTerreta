@@ -1,0 +1,140 @@
+header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  transition: box-shadow 0.2s;
+}
+.header-inner {
+  max-width: 1600px;
+  margin: auto;
+  min-height: 100px;
+  padding: 0 3.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  transition: min-height 0.2s;
+}
+.scrolled {
+  box-shadow: 0 3px 20px #00000009;
+}
+.scrolled .header-inner {
+  min-height: 80px;
+}
+.brand {
+  text-decoration: none;
+  color: #101216;
+  flex-shrink: 0;
+}
+.brand-placeholder {
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.brand-placeholder strong {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+nav a {
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 650;
+  white-space: nowrap;
+  padding: 12px 0;
+}
+nav a.active {
+  color: #ad350b;
+}
+nav a:hover {
+  color: #ad350b;
+}
+.header-cta {
+  background: #f15a24;
+  color: #101216;
+  padding: 15px 22px !important;
+  border-radius: var(--radius-pill);
+  min-height: 48px;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+nav .header-cta:hover,
+nav .header-cta.active {
+  color: var(--mars-black);
+  background: var(--mars-orange-light);
+}
+.header-cta:hover {
+  box-shadow: 0 6px 20px #f15a2426;
+}
+.header-cta span {
+  padding-left: 16px;
+}
+.menu-toggle {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .header-inner {
+    min-height: 80px;
+  }
+  .menu-toggle {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 10px 18px;
+    min-height: 48px;
+    border-radius: var(--radius-pill);
+    border: 1px solid #ddd;
+    background: white;
+    font: inherit;
+  }
+  .menu-toggle span:last-child {
+    font-size: 24px;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 18px 6% 28px;
+    max-height: calc(100dvh - 80px);
+    overflow: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  nav.is-open {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 2px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  .header-cta {
+    margin-top: 8px;
+  }
+}
+
+.brand img {
+  width: 126px;
+  height: auto;
+  max-height: 82px;
+  object-fit: contain;
+}
+.scrolled .brand img {
+  width: 108px;
+}
+@media (max-width: 1200px) {
+  .brand img {
+    width: 108px;
+    max-height: 68px;
+  }
+}

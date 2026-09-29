@@ -1,0 +1,203 @@
+{
+  "images": [
+    {
+      "key": "hero",
+      "source": "mars_p03_04_1448x1086.png",
+      "destination": "hero/mars-construccion-industrial",
+      "alt": "Montaje de una estructura industrial con grúa y plataforma elevadora.",
+      "widths": [640, 960, 1448],
+      "position": "62% 50%"
+    },
+    {
+      "key": "empresa",
+      "source": "mars_p05_11_1122x1402.png",
+      "destination": "empresa/mars-oficina",
+      "alt": "Oficina con planos, muestras y el emblema de Construcciones MARS.",
+      "widths": [480, 800, 1122],
+      "position": "50% 45%"
+    },
+    {
+      "key": "equipo",
+      "source": "mars_p06_14_1448x1086.png",
+      "destination": "empresa/mars-equipo-industrial",
+      "alt": "Grupo de profesionales con cascos junto a vehículos de trabajo.",
+      "widths": [640, 960, 1448],
+      "position": "50% 45%"
+    },
+    {
+      "key": "industriales",
+      "source": "mars_p04_06_1448x1086.png",
+      "destination": "servicios/mars-estructura-industrial",
+      "alt": "Estructura metálica en construcción y equipos de trabajo.",
+      "widths": [480, 800, 1200],
+      "position": "50% 50%"
+    },
+    {
+      "key": "gerencia",
+      "source": "mars_p06_13_1200x1200.png",
+      "destination": "servicios/mars-gerencia-planos",
+      "alt": "Revisión de planos técnicos en una mesa de trabajo.",
+      "widths": [480, 800, 1200],
+      "position": "50% 60%"
+    },
+    {
+      "key": "iso",
+      "source": "mars_p07_16_1269x1240.png",
+      "destination": "iso/mars-equipo-planificacion",
+      "alt": "Equipo reunido para revisar documentación y planos.",
+      "widths": [480, 800, 1200],
+      "position": "50% 65%"
+    },
+    {
+      "key": "logistica",
+      "source": "mars_p07_19_1448x1086.png",
+      "destination": "logistica/mars-flota-equipos",
+      "alt": "Camiones y equipos estacionados en un patio de operaciones.",
+      "widths": [480, 800, 1200],
+      "position": "50% 50%"
+    },
+    {
+      "key": "metalmecanica",
+      "source": "mars_p04_09_1537x1023.png",
+      "destination": "metalmecanica/mars-soldadura-industrial",
+      "alt": "Trabajador con protección facial realizando labores de soldadura.",
+      "widths": [480, 800, 1200],
+      "position": "55% 50%"
+    },
+    {
+      "key": "capacitacion",
+      "source": "mars_p06_14_1448x1086.png",
+      "destination": "iso/mars-equipo-tecnico",
+      "alt": "Grupo de profesionales con equipos de protección personal.",
+      "widths": [480, 800, 1200],
+      "position": "50% 45%"
+    },
+    {
+      "key": "soldadura",
+      "source": "mars_p08_20_1448x1086.png",
+      "destination": "metalmecanica/mars-soldadura-tuberia",
+      "alt": "Soldadura de una tubería con equipos de protección personal.",
+      "widths": [640, 960, 1448],
+      "position": "60% 50%"
+    },
+    {
+      "key": "construccion",
+      "source": "mars_p10_30_1379x1141.png",
+      "destination": "servicios/mars-obra-civil",
+      "alt": "Personal trabajando en una excavación y construcción civil.",
+      "widths": [480, 800, 1200],
+      "position": "50% 50%"
+    },
+    {
+      "key": "ingenieria",
+      "source": "mars_p10_32_1672x941.png",
+      "destination": "servicios/mars-instalacion-tuberias",
+      "alt": "Tuberías industriales con válvulas y equipos de medición.",
+      "widths": [480, 800, 1200],
+      "position": "50% 50%"
+    },
+    {
+      "key": "transporte",
+      "source": "mars_p10_34_1448x1086.png",
+      "destination": "logistica/mars-transporte-estructura",
+      "alt": "Camión transportando una estructura metálica.",
+      "widths": [480, 800, 1200],
+      "position": "50% 50%"
+    },
+    {
+      "key": "estructuras",
+      "source": "mars_p08_21_1550x1014.png",
+      "destination": "metalmecanica/mars-estructuras-metalicas",
+      "alt": "Cerchas y vigas de una estructura metálica a contraluz.",
+      "widths": [480, 800, 1200],
+      "position": "50% 50%"
+    },
+    {
+      "key": "inspeccion",
+      "source": "mars_p10_33_1086x1448.png",
+      "destination": "iso/mars-inspeccion-industrial",
+      "alt": "Personal con casco revisando una instalación industrial.",
+      "widths": [480, 800, 1086],
+      "position": "50% 55%"
+    },
+    {
+      "key": "cierre",
+      "source": "mars_p04_08_1535x1024.png",
+      "destination": "hero/mars-tanques-industriales",
+      "alt": "Tanques industriales, tuberías y equipos en una instalación.",
+      "widths": [640, 960, 1535],
+      "position": "60% 50%"
+    }
+  ],
+  "logos": [
+    {
+      "name": "Engineering Maintenance Solutions Inc. (EMSOL)",
+      "source": "mars_p11_37_1024x559.png",
+      "destination": "alianzas/mars-alianza-emsol.webp"
+    },
+    {
+      "name": "Dunlop",
+      "source": "mars_p11_38_1280x285.png",
+      "destination": "alianzas/mars-alianza-dunlop.webp"
+    },
+    {
+      "name": "Geoconsult, C.A.",
+      "source": "mars_p11_39_1455x1081.png",
+      "destination": "alianzas/mars-alianza-geoconsult.webp"
+    },
+    {
+      "name": "OPLANCO, C.A.",
+      "source": "mars_p11_40_2172x724.png",
+      "destination": "alianzas/mars-alianza-oplanco.webp"
+    },
+    {
+      "name": "Inteligencia Corporativa, C.A.",
+      "source": "mars_p11_41_1962x801.png",
+      "destination": "alianzas/mars-alianza-inteligencia-corporativa.webp"
+    },
+    {
+      "name": "Molecular de Occidente, C.A.",
+      "source": "mars_p11_42_1983x793.png",
+      "destination": "alianzas/mars-alianza-molecular-occidente.webp"
+    },
+    {
+      "name": "RTR PROY — Proyectos + Construcción",
+      "source": "mars_p11_43_1536x1024.png",
+      "destination": "alianzas/mars-alianza-rtr-proy.webp"
+    },
+    {
+      "name": "PolySpec / Thiokol",
+      "source": "mars_p11_44_1774x887.png",
+      "destination": "alianzas/mars-alianza-polyspec-thiokol.webp"
+    },
+    {
+      "name": "Importaciones RML",
+      "source": "mars_p11_45_1774x887.png",
+      "destination": "alianzas/mars-alianza-importaciones-rml.webp"
+    }
+  ],
+  "extracts": [
+    {
+      "source": "mars_p01_03_1537x1023.png",
+      "destination": "logo/mars-logo.webp",
+      "crop": [32, 70, 356, 224],
+      "width": 356
+    },
+    {
+      "source": "mars_p01_03_1537x1023.png",
+      "destination": "logo/mars-favicon.webp",
+      "crop": [128, 64, 144, 144],
+      "width": 64
+    },
+    {
+      "source": "mars_p01_03_1537x1023.png",
+      "destination": "logo/mars-open-graph.webp",
+      "width": 1200
+    },
+    {
+      "source": "mars_p09_28_309x244.png",
+      "destination": "empresa/mars-mapa-venezuela.webp",
+      "width": 309
+    }
+  ]
+}

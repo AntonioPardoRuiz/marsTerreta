@@ -1,0 +1,126 @@
+<mars-page-heading
+  label="Contacto"
+  title="Hablemos de tu proyecto"
+  description="Cuéntanos qué necesitas y prepara tu consulta para el equipo de MARS."
+/>
+<section class="section">
+  <div class="container contact-layout">
+    <aside>
+      <p class="eyebrow">CONSTRUCCIONES MARS, C.A.</p>
+      <h2>El siguiente paso empieza aquí.</h2>
+      <dl>
+        <dt>Sede principal</dt>
+        <dd>{{site.location}}, Venezuela</dd>
+        <dt>Identificación fiscal</dt>
+        <dd>RIF {{site.rif}}</dd>
+      </dl>
+      @if(site.email){<a [href]="'mailto:'+site.email">{{site.email}}</a>}@if(site.phone){<a
+        [href]="'tel:'+site.phone"
+        >{{site.phone}}</a
+      >}
+      <p class="contact-notice">
+        El canal de envío está pendiente de habilitación. Puedes preparar y copiar tu consulta; este
+        formulario no envía ni almacena tus datos.
+      </p>
+    </aside>
+    <form #form="ngForm" (ngSubmit)="prepare(form)" novalidate>
+      <div class="form-grid">
+        <div>
+          <label for="name">Nombre *</label
+          ><input
+            id="name"
+            name="name"
+            autocomplete="name"
+            [(ngModel)]="model.name"
+            required
+            maxlength="120"
+            #name="ngModel"
+            [attr.aria-invalid]="name.invalid && name.touched"
+            aria-describedby="name-error"
+          />@if(name.invalid && name.touched){<small id="name-error" class="error"
+            >Introduce tu nombre.</small
+          >}
+        </div>
+        <div>
+          <label for="email">Correo electrónico *</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            [(ngModel)]="model.email"
+            required
+            email
+            maxlength="200"
+            #email="ngModel"
+            [attr.aria-invalid]="email.invalid && email.touched"
+            aria-describedby="email-error"
+          />@if(email.invalid && email.touched){<small id="email-error" class="error"
+            >Introduce un correo válido.</small
+          >}
+        </div>
+        <div>
+          <label for="company">Empresa</label
+          ><input
+            id="company"
+            name="company"
+            autocomplete="organization"
+            [(ngModel)]="model.company"
+            maxlength="160"
+          />
+        </div>
+        <div>
+          <label for="service">Área de interés *</label
+          ><select
+            id="service"
+            name="service"
+            [(ngModel)]="model.service"
+            required
+            #service="ngModel"
+            [attr.aria-invalid]="service.invalid && service.touched"
+          >
+            <option value="">Selecciona un servicio</option>
+            @for(item of services;track item.id){
+            <option [value]="item.title">{{item.title}}</option>
+            }</select
+          >@if(service.invalid && service.touched){<small class="error"
+            >Selecciona un servicio.</small
+          >}
+        </div>
+        <div class="full-width">
+          <label for="message">Cuéntanos sobre tu proyecto *</label
+          ><textarea
+            id="message"
+            name="message"
+            [(ngModel)]="model.message"
+            required
+            minlength="20"
+            maxlength="4000"
+            rows="6"
+            #message="ngModel"
+            [attr.aria-invalid]="message.invalid && message.touched"
+            aria-describedby="message-help"
+          ></textarea
+          ><small id="message-help" [class.error]="message.invalid && message.touched"
+            >Entre 20 y 4.000 caracteres. Evita incluir información sensible.</small
+          >
+        </div>
+      </div>
+      <p class="form-note">* Campos necesarios para preparar la consulta.</p>
+      <button type="submit" class="button">
+        Preparar consulta <span aria-hidden="true">↗</span></button
+      >@if(prepared()){
+      <div class="prepared" role="status">
+        <h3>Tu consulta está preparada. No se ha enviado.</h3>
+        <label for="prepared-message">Texto de la consulta</label
+        ><textarea id="prepared-message" readonly rows="10" [value]="prepared()"></textarea
+        ><button type="button" class="button button-outline" (click)="copy()">
+          {{copied() ? 'Consulta copiada' : 'Copiar consulta'}}</button
+        >@if(copyError()){
+        <p>Selecciona y copia el texto manualmente.</p>
+        }
+      </div>
+      }
+    </form>
+  </div>
+</section>
