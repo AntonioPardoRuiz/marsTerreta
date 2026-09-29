@@ -924,6 +924,38 @@ footer a:hover {
 .empty-state p {
   margin: 28px 0;
 }
+.contact-maps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.contact-maps figure {
+  margin: 0;
+  min-width: 0;
+}
+.contact-maps iframe {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 32vw, 400px);
+  border: 0;
+  background: #e5e7eb;
+}
+.contact-maps figcaption {
+  padding: 1.25rem 0;
+}
+.contact-maps h3 {
+  margin: 0;
+}
+.contact-maps a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+@media (max-width: 767px) {
+  .contact-maps {
+    grid-template-columns: 1fr;
+  }
+}
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
