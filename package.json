@@ -1,7 +1,9 @@
 {
   "name": "mars-corporativa",
   "version": "1.0.0",
-  "private": true,
+  "private"
+  
+  : true,
   "scripts": {
     "start": "ng serve --host 127.0.0.1",
     "build": "ng build && node scripts/seo-assets.mjs",

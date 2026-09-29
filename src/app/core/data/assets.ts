@@ -9,12 +9,12 @@ export interface MarsImage {
 }
 export const images: Record<string, MarsImage | undefined> = {
   hero: {
-    src: '/assets/images/mars/hero/mars-construccion-industrial-1448.webp',
+    src: '/assets/images/mars/hero/mars-tanques-industriales-1535.webp',
     srcset:
-      '/assets/images/mars/hero/mars-construccion-industrial-640.webp 640w, /assets/images/mars/hero/mars-construccion-industrial-960.webp 960w, /assets/images/mars/hero/mars-construccion-industrial-1448.webp 1448w',
-    alt: 'Montaje de una estructura industrial con grúa y plataforma elevadora.',
-    width: 1448,
-    height: 1086,
+      '/assets/images/mars/hero/mars-tanques-industriales-640.webp 640w, /assets/images/mars/hero/mars-tanques-industriales-960.webp 960w, /assets/images/mars/hero/mars-tanques-industriales-1535.webp 1535w',
+    alt: 'Depósitos industriales en construcción con una grúa y tuberías en primer plano.',
+    width: 1535,
+    height: 1024,
     position: '62% 50%',
   },
   empresa: {
